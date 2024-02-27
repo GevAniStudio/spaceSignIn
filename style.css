@@ -131,22 +131,32 @@
   .btn_popUp {
     position: absolute;
     left: 37%;
-    top: 10%;
+    top: 5%;
   }
   
   .popUp_body {
     margin: 0 auto;
-    margin-top: 25px;
-    margin-left: 65px;
+    margin-top: 1px;
+    margin-left: 40px auto;
     width: 300px;
-    height: 300px;
+    height: 250px;
   }
   
   .popUp_body h2 {
-    font-family: "Anta", sans-serif;
     font-size: 26px;
     font-weight: 500;
-    margin-bottom: 43px;
-    margin-top: -60px;
+    margin-bottom: 13px;
+    margin-top: -75px;
+  }
+
+  .popUp_body button {
+    width: 90px;
+    margin: 15px auto 40px auto;
+    padding: 12px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    background-color: #7e7e7e80;
   }
 }
