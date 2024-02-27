@@ -126,3 +126,27 @@
   right: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .btn_popUp {
+    position: absolute;
+    left: 37%;
+    top: 10%;
+  }
+  
+  .popUp_body {
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-left: 65px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .popUp_body h2 {
+    font-family: "Anta", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 43px;
+    margin-top: -60px;
+  }
+}
