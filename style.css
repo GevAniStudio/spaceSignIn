@@ -128,9 +128,9 @@
 }
 
 @media (max-width: 992px) {
-  .btn_popUp {
+   .btn_popUp {
     position: absolute;
-    left: 37%;
+    left: 33%;
     top: 5%;
   }
   
