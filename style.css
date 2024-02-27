@@ -1,0 +1,128 @@
+/* font Anta */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+/* font JetBrains */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn_popUp {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.btn_popUp.open {
+  display: none;
+}
+
+.btn_popUp a {
+  font-family: "Anta", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(78, 81, 125, 0.804);
+  padding: 20px 34px;
+  border-radius: 13px;
+  border: #ffffff53 1px solid;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn_popUp a:hover {
+  text-decoration: underline;
+  color: beige;
+}
+
+.btn_popUp a:active {
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.popUp  {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.128);
+  z-index: 2;
+  transform: translateY(-60%) scale(0);
+  transition: .4s ease-in-out;
+}
+
+.popUp.active {
+  transform: translateY(0) scale(100%);
+}
+
+.popUp_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popUp_body {
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  background: #e2eaf5bf;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 15px 110px 15px;
+  position: relative;
+  top: 35px;
+}
+
+.popUp_body h2 {
+  font-family: "Anta", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 43px;
+  margin-top: -60px;
+}
+
+.popUp_body input {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 7px 12px;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  outline: none;
+}
+
+.popUp_body button {
+  display: block;
+  cursor: pointer;
+  width: 120px;
+  margin: 25px auto 40px auto;
+  padding: 12px 5px;
+  font-family: "Anta", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(4, 0, 8);
+  border-radius: 12px;
+  border: none;
+  background-color: #7e7e7e80;
+}
+
+.popUp_body button:hover {
+  background-color: #676767;
+}
+
+.popUp_close img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
